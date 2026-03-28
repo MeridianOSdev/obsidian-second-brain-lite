@@ -1,4 +1,5 @@
 # Second Brain Lite
+![Second Brain Lite Screenshot](screenshot.png)
 
 A clean Obsidian theme designed for knowledge systems, courses, and long-form thinking.
 
