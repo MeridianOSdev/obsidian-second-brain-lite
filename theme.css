@@ -122,14 +122,27 @@ SOFTWARE.
   color: var(--interactive-accent);
 }
 
+.graph-view.color-fill {
+  color: #4da3ff;
+}
+
+.graph-view.color-line {
+  color: rgba(77,163,255,.18);
+}
+
+.graph-view.color-text {
+  color: #cfe4ff;
+}
+
 /* ==========================================================================
    File explorer
    ========================================================================== */
 
 .nav-file-title,
 .nav-folder-title {
-  border-radius: var(--radius-s);
-  transition: background .15s ease, color .15s ease;
+  margin: 2px 6px;
+  padding: 8px 10px;
+  border-radius: 12px;
 }
 
 .nav-file-title:hover,
@@ -138,8 +151,12 @@ SOFTWARE.
 }
 
 .nav-file-title.is-active {
-  background: var(--background-modifier-active-hover);
-  color: var(--interactive-accent);
+  background: linear-gradient(
+    90deg,
+    rgba(77,163,255,.18),
+    rgba(77,163,255,.05)
+  );
+  border-left: 2px solid var(--interactive-accent);
 }
 
 /* ==========================================================================
@@ -173,21 +190,36 @@ SOFTWARE.
 
 .markdown-preview-view h2,
 .HyperMD-header-2 {
+  position: relative;
   margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  padding: .85rem 1rem;
-  border-radius: var(--radius-m);
+  padding: 1rem 1.1rem 1rem 1.2rem;
+  border-radius: 14px;
 
   background:
     linear-gradient(
-      180deg,
-      rgba(77,163,255,.10),
-      rgba(77,163,255,.03)
+      135deg,
+      rgba(77,163,255,.14),
+      rgba(77,163,255,.04)
     );
 
-  border: 1px solid var(--background-modifier-border);
+  border: 1px solid rgba(77,163,255,.12);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.04);
+
   color: var(--interactive-accent);
-  box-shadow: var(--shadow-m);
+}
+
+.markdown-preview-view h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12%;
+  bottom: 12%;
+  width: 4px;
+  border-radius: 999px;
+  background: var(--interactive-accent);
 }
 
 .markdown-preview-view h3,
