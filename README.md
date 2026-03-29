@@ -12,3 +12,14 @@ A clean Obsidian theme designed for knowledge systems, courses, and long-form th
 
 3. Open Obsidian → Appearance → Themes
 4. Select “SecondBrain”
+
+## Demo Dashboard
+
+A sample dashboard is included in home.md
+
+To use it:
+
+1. Copy the files home.md
+2. Paste them into your Obsidian vault
+3. Open `home.md`
+4. Switch to Reading View
