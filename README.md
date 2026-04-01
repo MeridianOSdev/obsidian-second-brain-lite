@@ -11,7 +11,7 @@ A clean Obsidian theme designed for knowledge systems, courses, and long-form th
 .obsidian/themes/SecondBrainLite/
 
 3. Open Obsidian → Appearance → Themes
-4. Select “SecondBrain”
+4. Select “SecondBrainLite”
 
 ## Demo Dashboard
 
